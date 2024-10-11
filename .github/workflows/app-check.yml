@@ -1,0 +1,27 @@
+name: Casino Lint+Prettier
+
+on: workflow_dispatch
+
+jobs:
+  Casino-Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "21"
+
+      - name: Install Node Packages
+        run: |
+          npm install
+
+      - name: Linting Code
+        run: |
+          npm run lint
+
+      - name: Prettier Code
+        run: |
+          npm run prettier

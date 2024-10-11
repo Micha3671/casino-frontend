@@ -1,0 +1,72 @@
+.background {
+  background-image: url("../../mediathek/images/Eingangneu-modified.webp");
+  background-position: top;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  background-color: black;
+  border: 3px solid lightgrey;
+  box-shadow: -5px 20px 30px 0px rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Tenor Sans", sans-serif;
+  color: var(--primary-color);
+}
+
+.logoleft {
+  height: 90px;
+  z-index: 99;
+  margin-left: -20vw;
+  position: absolute;
+}
+
+.logoright {
+  height: 90px;
+  margin-right: -20vw;
+  z-index: 99;
+  position: absolute;
+}
+
+.fakeId {
+  font-family: "Tenor Sans", sans-serif;
+  margin-top: 19vh;
+  margin-left: 25vw;
+  color: var(--secondary-color);
+  z-index: 99;
+  position: absolute;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonplus {
+  padding: 3px 6px;
+}
+
+.input {
+  font-family: "Tenor Sans", sans-serif;
+  border-radius: 6px;
+  text-align: center;
+}

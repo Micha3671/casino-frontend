@@ -1,0 +1,104 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 4vw;
+  margin-top: -19vh;
+  width: 25vw;
+  height: 60vh;
+  border-radius: 16px;
+  background-color: black;
+  border: 3px solid lightgrey;
+  box-shadow: -5px 20px 30px 0px rgba(0, 0, 0, 0.7);
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 16px;
+  background-color: grey;
+  font-family: "Tenor Sans", sans-serif;
+  color: var(--primary-color);
+  margin: 8px;
+  border-radius: 6px;
+}
+
+.roulette {
+  padding: 8px;
+  padding-top: 15px;
+}
+
+.score0 {
+  color: violet;
+  animation: changeColorTopScore 1s infinite alternate;
+}
+
+.score1 {
+  color: cyan;
+  animation: changeColorSecond 1s infinite alternate;
+}
+
+.score2 {
+  color: gold;
+  animation: changeColorThird 1s infinite alternate;
+}
+
+.score3 {
+  color: silver;
+  animation: changeColorFourth 1s infinite alternate;
+}
+
+.score4 {
+  color: coral;
+  animation: changeColorFifth 1s infinite alternate;
+}
+
+@keyframes changeColorTopScore {
+  from {
+    color: violet;
+  }
+  to {
+    color: cyan;
+  }
+}
+
+@keyframes changeColorSecond {
+  from {
+    color: cyan;
+  }
+  to {
+    color: gold;
+  }
+}
+
+@keyframes changeColorThird {
+  from {
+    color: gold;
+  }
+  to {
+    color: silver;
+  }
+}
+
+@keyframes changeColorFourth {
+  from {
+    color: silver;
+  }
+  to {
+    color: coral;
+  }
+}
+
+@keyframes changeColorFifth {
+  from {
+    color: coral;
+  }
+  to {
+    color: violet;
+  }
+}
